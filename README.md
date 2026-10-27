@@ -15,7 +15,7 @@ A responsive, animated personal CV website that presents my profile, education, 
 The profile picture is loaded from `assets/nel.jpg`.
 
 ## Student Information
-- **Student Name:** Justin Adam C. Umalay
+- **Student Name:** Janelle L. Loyola
 - **Year Level:** 4th Year
 - **Set/Section:** 4D
 - **Program:** BS Information Technology, Davao del Norte State College
