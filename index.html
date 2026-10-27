@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Janelle L. Loyola | Personal CV</title>
+  <meta name="description" content="Personal CV of Janelle L. Loyola, BSIT student and aspiring software developer." />
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('cvTheme');
+        const system = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = saved || system;
+      } catch {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader"><span>JA</span></div>
+
+  <header class="topbar">
+    <a href="#home" class="brand">JA.</a>
+    <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode"><i class="fa-solid fa-moon"></i></button>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="avatar-wrap">
+      <div class="avatar">
+        <img id="profileImage" src="./assets/nel.jpg" alt="Janelle L. Loyola" width="150" height="150" decoding="async" />
+      </div>
+    </div>
+    <h1>Janelle L. Loyola</h1>
+    <p class="role">BSIT Student · Aspiring Software Developer</p>
+    <button class="theme-toggle sidebar-theme-toggle" data-theme-toggle aria-label="Switch to dark mode"><i class="fa-solid fa-moon"></i><span>Dark mode</span></button>
+
+    <nav class="nav" id="nav">
+      <a href="#home" class="active"><i class="fa-solid fa-user"></i>Profile</a>
+      <a href="#about"><i class="fa-solid fa-address-card"></i>Basic Info</a>
+      <a href="#education"><i class="fa-solid fa-graduation-cap"></i>Education</a>
+      <a href="#skills"><i class="fa-solid fa-code"></i>Skills</a>
+      <a href="#projects"><i class="fa-solid fa-diagram-project"></i>Projects</a>
+      <a href="#github"><i class="fa-brands fa-github"></i>GitHub</a>
+      <a href="#achievements"><i class="fa-solid fa-award"></i>Achievements</a>
+      <a href="#experience"><i class="fa-solid fa-briefcase"></i>Experience</a>
+      <a href="#connect"><i class="fa-solid fa-share-nodes"></i>Connect</a>
+    </nav>
+
+    <div class="side-social">
+      <a href="https://github.com/meninblack9090" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://facebook.com/your-profile" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <!-- 1. PERSONAL PROFILE -->
+    <section id="home" class="hero reveal">
+      <span class="pill">Personal CV · 2026</span>
+      <h2>Hi, I'm <em>Janelle</em>.<br />I build for the <span id="typed">web</span><span class="cursor">|</span></h2>
+      <p class="lead">
+        A 4th-year Bachelor of Science in Information Technology student who enjoys turning ideas into clean,
+        interactive and practical digital products, from web apps to computer vision and secure systems.
+      </p>
+      <div class="objective">
+        <i class="fa-solid fa-bullseye"></i>
+        <div>
+          <h4>Career Objective</h4>
+          <p>To grow into a full-stack software developer and UI/UX-minded engineer who creates reliable, secure and user-friendly applications that solve real problems.</p>
+        </div>
+      </div>
+      <div class="cta">
+        <a href="#projects" class="btn primary">View Projects <i class="fa-solid fa-arrow-down"></i></a>
+        <a href="#connect" class="btn ghost">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- 2. BASIC INFORMATION -->
+    <section id="about" class="block reveal">
+      <h3><span class="num">01</span>Basic Information</h3>
+      <div class="grid info-grid">
+        <div class="card info"><i class="fa-solid fa-location-dot"></i><small>Location</small><p>Davao Region, Philippines</p></div>
+        <div class="card info"><i class="fa-solid fa-envelope"></i><small>Email</small><p>your.email@gmail.com</p></div>
+        <div class="card info"><i class="fa-solid fa-phone"></i><small>Contact</small><p>+63 9XX XXX XXXX</p></div>
+        <div class="card info"><i class="fa-solid fa-heart"></i><small>Career Interests</small><p>Web, App &amp; Software Development, UI/UX Design</p></div>
+      </div>
+      <p class="note">I'm a curious, detail-oriented student who learns by building. I like polished interfaces, clean code and working with teams to ship projects on time.</p>
+    </section>
+
+    <!-- 3. EDUCATION -->
+    <section id="education" class="block reveal">
+      <h3><span class="num">02</span>Education</h3>
+      <div class="timeline">
+        <div class="t-item">
+          <span class="date">2022 – PRESENT</span>
+          <h4>Bachelor of Science in Information Technology</h4>
+          <p>Davao del Norte State College · 4th Year, Section 4D</p>
+        </div>
+        <div class="t-item">
+          <span class="date">SENIOR HIGH SCHOOL</span>
+          <h4>Your Senior High School &amp; Strand</h4>
+          <p>Add school name and year graduated, plus any honors.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SKILLS -->
+    <section id="skills" class="block reveal">
+      <h3><span class="num">03</span>Technical &amp; Professional Skills</h3>
+      <div class="grid skills-grid">
+        <div class="skill"><div class="s-top"><span><i class="fa-brands fa-html5"></i> HTML &amp; CSS</span><b>90%</b></div><div class="bar"><i data-w="90"></i></div></div>
+        <div class="skill"><div class="s-top"><span><i class="fa-brands fa-js"></i> JavaScript</span><b>75%</b></div><div class="bar"><i data-w="75"></i></div></div>
+        <div class="skill"><div class="s-top"><span><i class="fa-brands fa-python"></i> Python</span><b>70%</b></div><div class="bar"><i data-w="70"></i></div></div>
+        <div class="skill"><div class="s-top"><span><i class="fa-solid fa-database"></i> PHP &amp; MySQL</span><b>65%</b></div><div class="bar"><i data-w="65"></i></div></div>
+        <div class="skill"><div class="s-top"><span><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span><b>75%</b></div><div class="bar"><i data-w="75"></i></div></div>
+        <div class="skill"><div class="s-top"><span><i class="fa-solid fa-pen-ruler"></i> UI/UX Design</span><b>70%</b></div><div class="bar"><i data-w="70"></i></div></div>
+      </div>
+      <div class="chips">
+        <span>Problem Solving</span><span>Teamwork</span><span>Communication</span><span>Adaptability</span><span>Cybersecurity Basics</span><span>Computer Vision</span>
+      </div>
+    </section>
+
+    <!-- 5. PROJECTS -->
+    <section id="projects" class="block reveal">
+      <h3><span class="num">04</span>Projects</h3>
+      <p class="hint">Click a card to see the details.</p>
+      <div class="grid proj-grid">
+        <article class="card project" tabindex="0" data-title="Secure Login System"
+          data-desc="A cybersecurity final project for password authentication. It uses SHA-256 hashing with per-user salts and a pepper, plus a real-time password strength meter. Built as both a single-file HTML/localStorage version and a PHP + MySQL version for XAMPP."
+          data-tech="HTML,CSS,JavaScript,PHP,MySQL" data-repo="https://github.com/meninblack9090" data-demo="">
+          <div class="p-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>Secure Login System</h4>
+          <p>Password auth with hashing, salting and a live strength meter.</p>
+          <div class="tags"><span>Security</span><span>PHP</span><span>MySQL</span></div>
+        </article>
+
+        <article class="card project" tabindex="0" data-title="CapWeb / CapCV"
+          data-desc="A computer vision project powered by Python and YOLO for object detection, with a Supabase backend for storing and serving data."
+          data-tech="Python,YOLO,Supabase" data-repo="https://github.com/meninblack9090" data-demo="">
+          <div class="p-icon"><i class="fa-solid fa-eye"></i></div>
+          <h4>CapWeb / CapCV</h4>
+          <p>YOLO-based computer vision with a Supabase backend.</p>
+          <div class="tags"><span>Python</span><span>YOLO</span><span>Supabase</span></div>
+        </article>
+
+        <article class="card project" tabindex="0" data-title="DermaLink"
+          data-desc="A skin assessment web app featuring a mock AI camera assessment flow and an HTML5 Audio API music shuffle system."
+          data-tech="HTML,CSS,JavaScript,Web Audio" data-repo="https://github.com/meninblack9090" data-demo="">
+          <div class="p-icon"><i class="fa-solid fa-camera"></i></div>
+          <h4>DermaLink</h4>
+          <p>Skin assessment web app with an AI camera concept.</p>
+          <div class="tags"><span>Web App</span><span>AI UI</span></div>
+        </article>
+
+        <article class="card project" tabindex="0" data-title="Interactive Greeting Website"
+          data-desc="A single-file animated greeting site using GSAP animations, floating polaroid cards and a canvas-based animated hearts background."
+          data-tech="HTML,CSS,JavaScript,GSAP,Canvas" data-repo="https://github.com/meninblack9090" data-demo="">
+          <div class="p-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h4>Interactive Greeting Site</h4>
+          <p>GSAP animations, polaroid cards and a canvas hearts background.</p>
+          <div class="tags"><span>GSAP</span><span>Canvas</span><span>UI</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6. GITHUB -->
+    <section id="github" class="block reveal">
+      <h3><span class="num">05</span>GitHub Profile</h3>
+      <div class="card gh">
+        <i class="fa-brands fa-github big"></i>
+        <div>
+          <h4>@meninblack9090</h4>
+          <p>Source code for my coursework, personal builds and this CV lives here.</p>
+        </div>
+        <a class="btn primary" href="https://github.com/meninblack9090" target="_blank" rel="noopener">Visit GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </section>
+
+    <!-- 9. ACHIEVEMENTS -->
+    <section id="achievements" class="block reveal">
+      <h3><span class="num">06</span>Achievements &amp; Certifications</h3>
+      <div class="grid three">
+        <div class="card ach"><i class="fa-solid fa-certificate"></i><h4>Certificate Title</h4><p>Issuer · Year. Replace with a real certificate or seminar.</p></div>
+        <div class="card ach"><i class="fa-solid fa-trophy"></i><h4>Award / Competition</h4><p>Add an award, hackathon or academic recognition.</p></div>
+        <div class="card ach"><i class="fa-solid fa-users"></i><h4>Organization</h4><p>Add a school organization or role you have held.</p></div>
+      </div>
+    </section>
+
+    <!-- 10. EXPERIENCE -->
+    <section id="experience" class="block reveal">
+      <h3><span class="num">07</span>Experience</h3>
+      <div class="timeline">
+        <div class="t-item">
+          <span class="date">ACADEMIC PROJECTS</span>
+          <h4>Cybersecurity, Computer Vision &amp; Web Development</h4>
+          <p>Designed and built group and individual projects, handling front-end, back-end integration and documentation.</p>
+        </div>
+        <div class="t-item">
+          <span class="date">GROUP RESEARCH</span>
+          <h4>Data Mining Project</h4>
+          <p>Applied association rule mining, clustering, classification and text mining to student performance analysis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 & 8. LINKEDIN + SOCIAL -->
+    <section id="connect" class="block reveal">
+      <h3><span class="num">08</span>LinkedIn &amp; Social Links</h3>
+      <div class="grid three">
+        <a class="card social" href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i><h4>LinkedIn</h4><p>Professional profile</p></a>
+        <a class="card social" href="https://github.com/meninblack9090" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><h4>GitHub</h4><p>@meninblack9090</p></a>
+        <a class="card social" href="https://facebook.com/your-profile" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i><h4>Facebook</h4><p>Say hello</p></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Janelle L. Loyola</span>
+      <span>Deployed on Vercel</span>
+    </footer>
+  </main>
+
+  <!-- Project modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true">
+      <button class="close" id="closeModal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <h4 id="mTitle"></h4>
+      <p id="mDesc"></p>
+      <div class="tags" id="mTech"></div>
+      <div class="cta">
+        <a class="btn primary" id="mRepo" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+        <a class="btn ghost" id="mDemo" target="_blank" rel="noopener">Live Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
