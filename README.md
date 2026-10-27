@@ -25,4 +25,4 @@ The profile picture is loaded from `assets/nel.jpg`.
 Vercel Link: https://your-project-name.vercel.app
 
 ## GitHub Repository
-[https://github.com/meninblack9090/personal-cv](https://github.com/nlkojvcts4gh/Cv-IT415)
+https://github.com/nlkojvcts4gh/Cv-IT415
