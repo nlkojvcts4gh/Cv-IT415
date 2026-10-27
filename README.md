@@ -14,7 +14,7 @@ A responsive, animated personal CV website that presents my profile, education, 
 
 The profile picture is loaded from `assets/nel.jpg`.
 
-The Secure Login System project preview is loaded from `assets/secureauth-login.png`.
+Project previews are stored in the `assets` folder, including `secureauth-login.png` and `ecosort-project.png`.
 
 ## Certificate
 
