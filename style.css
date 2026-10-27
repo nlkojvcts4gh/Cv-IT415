@@ -114,6 +114,7 @@ h3{display:flex;align-items:center;gap:14px;font-size:clamp(1.5rem,2.6vw,2.1rem)
 
 /* projects */
 .project{cursor:pointer}
+.project-preview{width:100%;height:220px;object-fit:contain;background:#0b0f18;border-radius:12px;margin-bottom:16px}
 .p-icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:var(--white);font-size:1.2rem;margin-bottom:14px;transition:transform .4s}
 .project:hover .p-icon{transform:rotate(10deg) scale(1.1)}
 .project h4,.gh h4,.ach h4,.social h4{font-size:1.1rem;letter-spacing:-.03em;margin-bottom:6px}

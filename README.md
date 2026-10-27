@@ -14,6 +14,8 @@ A responsive, animated personal CV website that presents my profile, education, 
 
 The profile picture is loaded from `assets/nel.jpg`.
 
+The Secure Login System project preview is loaded from `assets/secureauth-login.png`.
+
 ## Certificate
 
 The BSIT 413 Artificial Intelligence for Innovation of Capstone Project certificate is displayed in the Achievements & Certifications section and stored at `assets/bsit-413-ai-innovation-certificate.png`.
