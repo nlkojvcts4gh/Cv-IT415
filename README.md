@@ -22,7 +22,7 @@ The profile picture is loaded from `assets/nel.jpg`.
 - **Subject:** IT 415 – Application Development and Emerging Technologies
 
 ## Live Website
-Vercel Link: https://your-project-name.vercel.app
+Vercel Link: https://cv-it415.vercel.app/
 
 ## GitHub Repository
 https://github.com/nlkojvcts4gh/Cv-IT415
