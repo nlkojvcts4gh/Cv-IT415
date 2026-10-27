@@ -82,6 +82,12 @@ h3{display:flex;align-items:center;gap:14px;font-size:clamp(1.5rem,2.6vw,2.1rem)
 .three{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);transition:transform .3s,background-color .4s,color .4s,box-shadow .4s,border-color .4s}
 .card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 18px 38px var(--shadow)}
+.certificate-card{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(240px,1fr);align-items:center;gap:24px}
+.certificate-image{display:block;overflow:hidden;border-radius:12px}
+.certificate-image img{width:100%;height:auto}
+.certificate-details h4{margin-bottom:8px}
+.certificate-details p{color:var(--muted);font-size:.93rem}
+.certificate-details i{font-size:1.6rem;color:var(--brand);margin-bottom:12px}
 .info i{color:var(--brand);font-size:1.1rem;margin-bottom:10px}
 .info small{display:block;color:var(--muted);font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700}
 .info p{font-weight:600;word-break:break-word}
@@ -166,5 +172,6 @@ h3{display:flex;align-items:center;gap:14px;font-size:clamp(1.5rem,2.6vw,2.1rem)
 @media (max-width:760px){
   .hero{grid-template-columns:minmax(0,1fr);gap:36px}
   .hero-profile{max-width:360px}
+  .certificate-card{grid-template-columns:minmax(0,1fr)}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}

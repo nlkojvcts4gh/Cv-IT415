@@ -14,6 +14,10 @@ A responsive, animated personal CV website that presents my profile, education, 
 
 The profile picture is loaded from `assets/nel.jpg`.
 
+## Certificate
+
+The BSIT 413 Artificial Intelligence for Innovation of Capstone Project certificate is displayed in the Achievements & Certifications section and stored at `assets/bsit-413-ai-innovation-certificate.png`.
+
 ## Student Information
 - **Student Name:** Janelle L. Loyola
 - **Year Level:** 4th Year
